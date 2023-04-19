@@ -26,8 +26,12 @@
         <section class="py-5 text-center container">
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light">Hello, NIX Education</h1>
-                    <p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+    <?php
+            $text = $_POST['text'];
+            $change = strrev($text);
+            echo $change . "</br></br>";
+            echo "<a href='strrev.php'><button>Вернуться обратно</button></a>";
+    ?>
                 </div>
             </div>
         </section>
