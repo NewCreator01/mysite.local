@@ -18,7 +18,7 @@
 
             <ul class="nav nav-pills">
                 <li class="nav-item"><a href="#" class="nav-link">Урок 1</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Урок 2</a></li>
+                <li class="nav-item"><a href="table_color.php" class="nav-link">Урок 2</a></li>
             </ul>
         </header>
 
