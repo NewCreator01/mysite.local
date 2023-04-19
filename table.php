@@ -17,7 +17,7 @@
             </a>
 
             <ul class="nav nav-pills">
-                <li class="nav-item"><a href="table.php" class="nav-link">Урок 1</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Урок 1</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Урок 2</a></li>
             </ul>
         </header>
@@ -25,8 +25,23 @@
         <section class="py-5 text-center container">
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light">Hello, NIX Education</h1>
-                    <p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+<?php
+
+   $num = range(1,10);
+
+   echo "<table class='table'>";
+   foreach($num as $x){
+        echo "<td style='border: solid black 1px'>";
+
+        foreach($num as $y){
+             echo "$x x $y = " . $x*$y . "<br/>";
+        }
+        echo "</td>";
+
+        if($x == 5)  echo "</tr><tr>";
+   }
+   echo '</table>';
+?>
                 </div>
             </div>
         </section>
